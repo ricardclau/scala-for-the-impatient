@@ -1,4 +1,4 @@
-1. Improve the Counter class so that it does not turn negative at Int.MaxValue 
+1. Improve the Counter class so that it does not turn negative at Int.MaxValue
 
 	```scala
 	class Counter {
@@ -14,7 +14,7 @@
 	class BankAccount {
 		private val _balance: Double = 0.0
 		def deposit(money: Double)  { _balance += money }
-		def withdraw(money: Double) { 
+		def withdraw(money: Double) {
 			if (money > _balance) {
 				throw new Exception("Not enough money")
 			}
@@ -22,7 +22,7 @@
 		}
 		def balance = _balance
 	}
-	```	
+	```
 
 3. Class Time with read-only properties hours and minutes and a method before(other: Time): Boolean. Constructor like new Time(hrs, min)
 
@@ -42,7 +42,7 @@
 	}
 	```
 
-4. Same class signature but internal representations as an integer	
+4. Same class signature but internal representations as an integer
 
 	```scala
 	class Time(hrs: Int, min: Int) {
@@ -180,7 +180,7 @@
 	```
 
 	```scala
-	class Employee {		
+	class Employee {
 		private var _name = "John Q. Public"
 		var salary = 0.0
 
@@ -194,4 +194,4 @@
 	}
 	```
 
-	
+
